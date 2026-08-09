@@ -18,7 +18,7 @@ https://github.com/akhtarujjaman007/Modern-Responsive-Portfolio
 
 ## 👨‍💻 About Me
 
-Hi, I'm **Sujon Siddiquee**, an **IoT & Robotics Engineering student** interested in building practical technology solutions using IoT, embedded systems, robotics, mobile applications and intelligent automation.
+Hi, I'm **Md. Akhtarujjaman Siddiquee**, an **IoT & Robotics Engineering student** interested in building practical technology solutions using IoT, embedded systems, robotics, mobile applications and intelligent automation.
 
 My work focuses on combining hardware and software to develop useful and scalable systems.
 
