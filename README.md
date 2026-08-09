@@ -1,4 +1,4 @@
-# Modern Responsive Portfolio — Sujon Siddiquee
+# Modern Responsive Portfolio — Md. Akhtarujjaman Siddiquee
 
 A modern, responsive and interactive personal portfolio website built to showcase my work, technical skills, research, certifications, projects and experience in **IoT, Robotics, Embedded Systems and Software Development**.
 
