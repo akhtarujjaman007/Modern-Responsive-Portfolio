@@ -187,3 +187,11 @@ Modern-Responsive-Portfolio-Pro/
 ├── DEPLOYMENT.md
 ├── LICENSE
 └── README.md
+
+
+👨‍💻 Developer
+MD. AKHTARUJJAMAN SIDDIQUEE (Sujon)
+
+🎓 B.Sc. in IoT & Robotics Engineering
+💙 Flutter Developer
+🤖 IoT & Embedded Systems Enthusiast
