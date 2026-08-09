@@ -77,15 +77,15 @@ export default function Hero() {
               <ArrowDownRight size={16} />
             </a>
 
-            <a
-              className="btn outline"
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FileText size={16} />
-              View CV
-            </a>
+          <a
+  className="btn secondary"
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  target="_blank"
+  rel="noreferrer"
+>
+  <FileText size={16} />
+  View CV
+</a>
 
           </div>
 
@@ -150,11 +150,11 @@ export default function Hero() {
 
             <div className="profile-image-wrapper">
 
-              <img
-                src="/profile.jpg"
-                alt="Akhtarujjaman"
-                className="profile-image"
-              />
+            <img
+  src={`${import.meta.env.BASE_URL}profile.jpg`}
+  alt="Akhtarujjaman"
+  className="profile-image"
+/>
 
               <div className="profile-overlay" />
 
