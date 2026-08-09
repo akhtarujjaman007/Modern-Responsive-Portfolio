@@ -34,6 +34,31 @@ A polished personal portfolio built from the portfolio design developed througho
 - Loading screen
 - Responsive mobile layout
 
+## Included sections
+
+Modern-Responsive-Portfolio-Pro/
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── index.html
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+│
+├── public/
+│   ├── profile.jpg
+│   ├── resume.pdf
+│   └── README-ASSETS.txt
+│
+├── src/
+│   ├── components/
+│   ├── styles/
+│   ├── App.jsx
+│   ├── data.js
+│   └── main.jsx
+│
+└── README.md
 ## Real project links included
 
 - https://github.com/akhtarujjaman007/Flutter-Weather-App
