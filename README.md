@@ -34,7 +34,7 @@ A polished personal portfolio built from the portfolio design developed througho
 - Loading screen
 - Responsive mobile layout
 
-## Included sections
+## File
 
 Modern-Responsive-Portfolio-Pro/
 │
