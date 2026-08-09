@@ -1,50 +1,151 @@
-# Modern Responsive Portfolio Pro
+# Modern Responsive Portfolio — Sujon Siddiquee
 
-A polished personal portfolio built from the portfolio design developed throughout this project.
+A modern, responsive and interactive personal portfolio website built to showcase my work, technical skills, research, certifications, projects and experience in **IoT, Robotics, Embedded Systems and Software Development**.
 
-## Stack
+The portfolio is designed with a clean dark interface, responsive layouts, smooth animations, interactive elements and a technology-focused visual style.
+
+---
+
+## 🌐 Live Portfolio
+
+**Portfolio:**  
+https://github.io/
+
+**GitHub Repository:**  
+https://github.com/akhtarujjaman007/Modern-Responsive-Portfolio
+
+---
+
+## 👨‍💻 About Me
+
+Hi, I'm **Sujon Siddiquee**, an **IoT & Robotics Engineering student** interested in building practical technology solutions using IoT, embedded systems, robotics, mobile applications and intelligent automation.
+
+My work focuses on combining hardware and software to develop useful and scalable systems.
+
+### Areas of Interest
+
+- Internet of Things (IoT)
+- Robotics
+- Embedded Systems
+- ESP32 & Arduino
+- Smart Automation
+- Flutter & Dart
+- Mobile Application Development
+- MQTT & Connected Systems
+- Data Analysis
+- Artificial Intelligence
+- Research & Development
+
+---
+
+# ✨ Features
+
+## 🎨 Modern UI
+
+- Modern dark-themed interface
+- Responsive design
+- Clean typography
+- Glassmorphism-inspired components
+- Technology-focused visual design
+- Smooth hover effects
+
+## 🚀 Interactive Hero Section
+
+The hero section includes:
+
+- Professional profile image
+- Animated entrance effects
+- Interactive technology cards
+- IoT / Embedded / Flutter / Automation / Research highlights
+- Animated background
+- GitHub, LinkedIn and Email links
+- CV access button
+
+## 🎬 Animations
+
+Powered by **Framer Motion** for:
+
+- Scroll animations
+- Section entrance animations
+- Hover interactions
+- Floating elements
+- Smooth transitions
+- Interactive cards
+
+## 🌌 Interactive Background
+
+The portfolio includes an interactive visual background powered by:
+
+- Three.js
+- React Three Fiber
+- React Three Drei
+
+## 📱 Responsive Design
+
+Designed to work across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+## 📂 Portfolio Sections
+
+The website includes:
+
+1. Home
+2. About
+3. Skills
+4. Projects
+5. Research
+6. Experience
+7. Education
+8. Certifications
+9. GitHub
+10. Contact
+
+---
+
+# 🛠️ Technologies Used
+
+### Frontend
 
 - React
+- JavaScript
+- JSX
+- HTML5
+- CSS3
+
+### Build Tools
+
 - Vite
-- Tailwind CSS setup
+- npm
+
+### UI & Animation
+
 - Framer Motion
-- React Three Fiber / Three.js
 - Lucide React
-- GSAP dependency included for future advanced motion work
+- CSS animations
+- Responsive CSS
 
-## Included sections
+### 3D
 
-- Animated hero
-- 3D star/mesh background
-- Dark/light mode
-- Responsive navigation
-- About
-- Statistics
-- Technical skills
-- Filterable projects
-- Project detail modal
-- Research publications with DOI links
-- Experience timeline
-- Education
-- Certifications placeholder area
-- GitHub activity panel
-- Contact form
-- Footer
-- Scroll progress
-- Loading screen
-- Responsive mobile layout
+- Three.js
+- React Three Fiber
+- React Three Drei
 
-## File Structure
+### Development
 
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
+# 📁 Project Structure
+
+```text
 Modern-Responsive-Portfolio-Pro/
-│
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── index.html
-├── vite.config.js
-├── tailwind.config.js
-├── postcss.config.js
 │
 ├── public/
 │   ├── profile.jpg
@@ -52,49 +153,37 @@ Modern-Responsive-Portfolio-Pro/
 │   └── README-ASSETS.txt
 │
 ├── src/
+│   │
 │   ├── components/
+│   │   ├── About.jsx
+│   │   ├── Certificates.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Education.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Github.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Research.jsx
+│   │   ├── SectionTitle.jsx
+│   │   ├── Skills.jsx
+│   │   └── ThreeBackground.jsx
+│   │
 │   ├── styles/
+│   │   └── globals.css
+│   │
 │   ├── App.jsx
 │   ├── data.js
 │   └── main.jsx
 │
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── DEPLOYMENT.md
+├── LICENSE
 └── README.md
-## Real project links included
-
-- https://github.com/akhtarujjaman007/Flutter-Weather-App
-- https://github.com/akhtarujjaman007/Portable-Assistive-Device
-- https://github.com/akhtarujjaman007/Smart-Home-Automation-UI-Flutter
-
-## Publication identifiers included
-
-- 10.5815/ijieeb.2026.03.11
-- 10.1109/QPAIN69676.2026.11546542
-- 10.1109/SPICSCON69221.2025.11504213
-- 10.1109/ICECTE69292.2026.11429254
-
-The exact publication titles/authors are intentionally not invented. Add verified metadata from the final papers.
-
-## Run
-
-```bash
-npm install
-npm run dev
-```
-
-Build:
-
-```bash
-npm run build
-npm run preview
-```
-
-## Personalize
-
-1. Replace `public/resume.pdf`.
-2. Add `public/profile.jpg` and update the hero if you want a real profile image.
-3. Update `src/data.js` with exact email, LinkedIn, project details, paper titles and certificates.
-4. Connect the contact form to EmailJS or Formspree before production.
-
-## GitHub
-
-https://github.com/akhtarujjaman007
