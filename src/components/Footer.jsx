@@ -4,7 +4,7 @@ import { profile } from "../data";
 export default function Footer() {
   return <footer>
     <div className="container footer">
-      <div><a className="brand" href="#home">Sujon<span>.</span></a><p>IoT & Robotics • Flutter • Embedded • Research</p></div>
+      <div><a className="brand" href="#home">MD. AKHTARUJJAMAN SIDDIQUEE<span>.</span></a><p>IoT & Robotics • Flutter • Embedded • Research</p></div>
       <div className="footer-links">{["Home","About","Projects","Research","Contact"].map(x=><a key={x} href={`#${x.toLowerCase()}`}>{x}</a>)}</div>
       <div className="footer-social"><a href={profile.github} target="_blank" rel="noreferrer"><Github/></a><a href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin/></a></div>
     </div>
