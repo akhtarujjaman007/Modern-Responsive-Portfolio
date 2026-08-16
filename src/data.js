@@ -47,7 +47,7 @@ export const projects = [
 ];
 
 export const skills = [
-  { title: "IoT & Embedded", items: ["ESP32", "Arduino", "Sensors", "MQTT"] },
+  { title: "IoT & Embedded", items: ["ESP32", "Arduino", "Raspberry Pi", "Sensors", "MQTT"] },
   { title: "Mobile Development", items: ["Flutter", "Dart", "Firebase"] },
   { title: "Programming", items: ["C", "C++", "Python", "JavaScript"] },
   { title: "Research", items: ["Technical Writing", "Literature Review", "Publication"] },
