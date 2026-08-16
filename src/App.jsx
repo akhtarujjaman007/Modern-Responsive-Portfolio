@@ -30,7 +30,7 @@ export default function App() {
   },[]);
 
   return <div className={`app ${dark?"dark":"light"}`}>
-    <AnimatePresence>{loading && <motion.div className="loader" initial={{opacity:1}} exit={{opacity:0}}><div className="loader-mark">S<span>.</span></div><div className="loader-bar"/></motion.div>}</AnimatePresence>
+    <AnimatePresence>{loading && <motion.div className="loader" initial={{opacity:1}} exit={{opacity:0}}><div className="loader-mark">A<span>.</span></div><div className="loader-bar"/></motion.div>}</AnimatePresence>
     <div className="scroll-progress" style={{width:`${progress}%`}}/>
     <Navbar dark={dark} setDark={setDark} open={menu} setOpen={setMenu}/>
     <main>
