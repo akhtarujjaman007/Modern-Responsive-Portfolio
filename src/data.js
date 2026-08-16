@@ -92,13 +92,13 @@ export const certificates = [
     link: "https://www.freecodecamp.org/certification/akhtarujjaman/data-analysis-with-python-v7"
   },
   {
-    title: "Coursera Professional Certificate",
+    title: "'Google Data Analytics' Coursera Professional Certificate",
     issuer: "Coursera",
     status: "Verified Certificate",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/FYANA0R62BB2"
   },
   {
-    title: "Coursera Professional Certificate",
+    title: "'Google AI' Coursera Certificate",
     issuer: "Coursera",
     status: "Verified Certificate",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/C9GD9PUE1LX1"
