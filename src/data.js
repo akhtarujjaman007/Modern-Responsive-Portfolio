@@ -39,9 +39,9 @@ export const projects = [
   {
     title: "Digital Twin Smart Farm",
     category: "IoT",
-    description: "A planned IoT + Flutter smart-farm platform concept with an interactive farm map, device control and MQTT integration.",
+    description: "A planned IoT + Flutter smart-farm platform concept with an interactive Rice Field map, device control and MQTT integration.",
     tags: ["ESP32", "MQTT", "Flutter"],
-    link: "https://github.com/akhtarujjaman007",
+    link: "https://github.com/akhtarujjaman007/Digital-twin-Rice-field-ricetwin_ai-",
     number: "04"
   }
 ];
