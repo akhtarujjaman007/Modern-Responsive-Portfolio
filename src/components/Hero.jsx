@@ -147,9 +147,9 @@ export default function Hero() {
           </div>
 
           {[
-            ["annotation-one", Cpu, "SYSTEM 01", "RESEARCH, PROBLEM SOLVING"],
-            ["annotation-two", Radio, "SYSTEM 02", "EMBEDDED, AUTOMATION"],
-            ["annotation-three", Bot, "SYSTEM 03", "ROBOTICS, IOT"],
+            ["annotation-one", Cpu, "SYSTEM 01", "EMBEDDED, IOT, AUTOMATION"],
+            ["annotation-two", Radio, "SYSTEM 02", ",RESEARCH, PROBLEM SOLVING"],
+            ["annotation-three", Bot, "SYSTEM 03", "ROBOTICS, FLUTTER"],
           ].map(([cls, Icon, small, strong]) => (
             <motion.div
               key={cls}
