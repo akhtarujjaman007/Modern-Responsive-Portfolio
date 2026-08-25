@@ -1,112 +1,66 @@
 export const profile = {
-  name: "MD. AKHTARUJJAMAN SIDDIQUEE",
-  role: "IoT & Robotics Engineer",
-  email: "akhtarujjamansiddiquee@gmail.com",
+  name: "Akhtarujjaman Siddiquee",
+  role: "IoT & Robotics Engineering Student",
+  email: "akhtarujjaman007@gmail.com",
   github: "https://github.com/akhtarujjaman007",
-  linkedin: "https://www.linkedin.com/in/akhtarujjaman-siddiquee-sujon/",
-  location: "Bangladesh",
-  university: "University of Frontier Technology Bangladesh (UFTB)",
-  degree: "B.Sc. in IoT & Robotics Engineering"
+  linkedin: "https://bd.linkedin.com/in/akhtarujjaman-siddiquee-sujon",
+  about: "I am an IoT and Robotics Engineering student interested in building practical systems that connect hardware, software and intelligent automation."
 };
 
-export const navItems = ["Home", "About", "Skills", "Projects", "Research", "Experience", "Education", "Contact"];
-
-export const projects = [
-  {
-    title: "Flutter Weather App",
-    category: "Mobile",
-    description: "A responsive Flutter weather application focused on practical weather-data presentation and a clean mobile UI.",
-    tags: ["Flutter", "Dart", "API"],
-    link: "https://github.com/akhtarujjaman007/Flutter-Weather-App",
-    number: "01"
-  },
-  {
-    title: "Portable Assistive Device",
-    category: "IoT",
-    description: "An assistive-device project combining embedded hardware concepts, sensing and practical accessibility-focused functionality.",
-    tags: ["IoT", "Embedded", "Sensors"],
-    link: "https://github.com/akhtarujjaman007/Portable-Assistive-Device",
-    number: "02"
-  },
-  {
-    title: "Smart Home Automation UI",
-    category: "Mobile",
-    description: "A modern Flutter interface concept for controlling smart-home devices and visualizing automation states.",
-    tags: ["Flutter", "UI", "IoT"],
-    link: "https://github.com/akhtarujjaman007/Smart-Home-Automation-UI-Flutter",
-    number: "03"
-  },
-  {
-    title: "Digital Twin Smart Farm",
-    category: "IoT",
-    description: "A planned IoT + Flutter smart-farm platform concept with an interactive Rice Field map, device control and MQTT integration.",
-    tags: ["ESP32", "MQTT", "Flutter"],
-    link: "https://github.com/akhtarujjaman007/Digital-twin-Rice-field-ricetwin_ai-",
-    number: "04"
-  }
-];
-
 export const skills = [
-  { title: "IoT & Embedded", items: ["ESP32", "Arduino", "Raspberry Pi", "Sensors", "MQTT"] },
-  { title: "Mobile Development", items: ["Flutter", "Dart", "Firebase"] },
-  { title: "Programming", items: ["C", "C++", "Python", "JavaScript"] },
-  { title: "Research", items: ["Technical Writing", "Literature Review", "Publication"] },
-  { title: "Tools", items: ["Git", "GitHub", "VS Code", "Linux"] },
-  { title: "Interests", items: ["Robotics", "AI", "Smart Agriculture", "Automation"] }
+  { code:"01", title:"IoT Systems", text:"Connected devices, sensing, communication and automation workflows." },
+  { code:"02", title:"Embedded", text:"Microcontrollers, sensors, hardware integration and prototyping." },
+  { code:"03", title:"Robotics", text:"Automation, control concepts and practical robotic systems." },
+  { code:"04", title:"Flutter", text:"Cross-platform mobile interfaces and application development." },
+  { code:"05", title:"Research", text:"Technical literature review, experimentation and academic writing." },
+  { code:"06", title:"Git / GitHub", text:"Version control, project documentation and collaborative workflows." }
 ];
 
 export const publications = [
-  { type: "Journal", year: "2026", venue: "IJIEEB", doi: "10.5815/ijieeb.2026.03.11" },
-  { type: "Conference", year: "2026", venue: "IEEE QPAIN", doi: "10.1109/QPAIN69676.2026.11546542" },
-  { type: "Conference", year: "2025", venue: "IEEE SPICSCON", doi: "10.1109/SPICSCON69221.2025.11504213" },
-  { type: "Conference", year: "2026", venue: "IEEE ICECTE", doi: "10.1109/ICECTE69292.2026.11429254" }
+  { code:"P01", title:"IoT-Based Smart Homes: Technologies, Security Risks and Countermeasures", venue:"International Journal of Information Engineering and Electronic Business", doi:"10.5815/ijieeb.2026.03.11" },
+  { code:"P02", title:"AgriMind: An IoT-Driven LLM Framework for Intelligent Precision Agriculture", venue:"IEEE QPAIN 2026", doi:"10.1109/QPAIN69676.2026.11546542" },
+  { code:"P03", title:"A Portable Assistive Device for Deaf and Mute Communication and Safety Using Gesture and Sound Recognition", venue:"IEEE SPICSCON 2025", doi:"10.1109/SPICSCON69221.2025.11504213" },
+  { code:"P04", title:"Transformer-Based Models for Student Mental Health Detection: A Comparative Study of BERT, RoBERTa and Gemma", venue:"IEEE ICECTE 2026", doi:"10.1109/ICECTE69292.2026.11429254" }
 ];
 
 export const experience = [
-  {
-    period: "2024–2025",
-    title: "Office Secretary",
-    organization: "UFTB Robotics Club",
-    description: "Supported club administration, coordination, documentation and technical activities."
-  },
-  {
-    period: "2023–2024",
-    title: "Executive Member",
-    organization: "UFTB Language Club",
-    description: "Participated in club activities and communication-focused programs."
-  }
+  { date:"2024–25", title:"Office Secretary", org:"UFTB Robotics Club", text:"Leadership, coordination and robotics-community activities." },
+  { date:"2023–24", title:"Executive Member", org:"UFTB Language Club", text:"Communication, event support and student activities." }
 ];
 
 export const education = {
-  period: "Undergraduate",
-  degree: "B.Sc. in IoT & Robotics Engineering",
-  university: "University of Frontier Technology Bangladesh (UFTB)",
-  description: "Academic focus across IoT, robotics, embedded systems, software development and research."
+  degree:"B.Sc. in IoT & Robotics Engineering",
+  institution:"University of Frontier Technology Bangladesh (UFTB)",
+  status:"Current undergraduate study"
 };
 
-export const certificates = [
+export const certifications = [
   {
-    title: "Data Analysis with Python",
     issuer: "freeCodeCamp",
-    status: "Verified Certificate",
+    title: "Data Analysis with Python",
+    text: "Issued February 2025 · Credential ID: akhtarujjaman-dawp",
     link: "https://www.freecodecamp.org/certification/akhtarujjaman/data-analysis-with-python-v7"
   },
+
   {
-    title: "'Google Data Analytics' Coursera Professional Certificate",
-    issuer: "Coursera",
-    status: "Verified Certificate",
+    issuer: "Google",
+    title: "Google Data Analytics",
+    text: "Technical learning credential.",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/FYANA0R62BB2"
   },
+
   {
-    title: "'Google AI' Coursera Certificate",
-    issuer: "Coursera",
-    status: "Verified Certificate",
+    issuer: "Google",
+    title: "Google AI",
+    text: "Technical learning credential.",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/C9GD9PUE1LX1"
   },
+
   {
-    title: "Udemy Certificate",
     issuer: "Udemy",
-    status: "Verified Certificate",
+    title: "Python Complete Course: With 30+ Hands-on Tasks and Solution",
+    text: "Issued May 2025 · Credential ID: UC-b1053402-7aa1-4e47-b7eb-4f815f3cd8d7",
     link: "https://www.udemy.com/certificate/UC-b1053402-7aa1-4e47-b7eb-4f815f3cd8d7/"
   }
+
 ];

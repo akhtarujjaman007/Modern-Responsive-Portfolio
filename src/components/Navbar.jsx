@@ -1,25 +1,48 @@
-import { Moon, Sun, Menu, X } from "lucide-react";
-import { navItems } from "../data";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-export default function Navbar({ dark, setDark, open, setOpen }) {
+const navItems = [
+  ["PROFILE", "#about"],
+  ["STACK", "#skills"],
+  ["PROJECTS", "#projects"],
+  ["RESEARCH", "#research"],
+  ["EXPERIENCE", "#experience"],
+  ["EDUCATION", "#education"],
+  ["CREDENTIALS", "#certifications"],
+  ["CONTACT", "#contact"],
+];
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="navbar-shell">
-      <nav className="container navbar">
-        <a className="brand" href="#home">Akhtarujjaman<span>.</span></a>
-        <div className={`nav-links ${open ? "open" : ""}`}>
-          {navItems.map(item => (
-            <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setOpen(false)}>{item}</a>
+      <div className="container navbar">
+        <a className="brand" href="#top">
+          FIELD <span>// 001</span>
+        </a>
+
+        <nav className={`nav-links ${open ? "open" : ""}`}>
+          {navItems.map(([label, href]) => (
+            <a
+              key={href}
+              href={href}
+              onClick={() => setOpen(false)}
+            >
+              {label}
+            </a>
           ))}
-        </div>
-        <div className="nav-tools">
-          <button className="circle-btn" onClick={() => setDark(v => !v)} aria-label="Toggle theme">
-            {dark ? <Sun size={17} /> : <Moon size={17} />}
-          </button>
-          <button className="circle-btn menu-trigger" onClick={() => setOpen(v => !v)} aria-label="Toggle navigation">
-            {open ? <X size={19} /> : <Menu size={19} />}
-          </button>
-        </div>
-      </nav>
+        </nav>
+
+        <button
+          className="circle-btn menu-trigger"
+          onClick={() => setOpen((v) => !v)}
+          aria-label="Toggle menu"
+          aria-expanded={open}
+        >
+          {open ? <X size={17} /> : <Menu size={17} />}
+        </button>
+      </div>
     </header>
   );
 }

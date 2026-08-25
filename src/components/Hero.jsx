@@ -1,272 +1,203 @@
 import { motion } from "framer-motion";
 import {
   ArrowDownRight,
+  ArrowUpRight,
   Github,
   Linkedin,
   Mail,
-  FileText,
   Cpu,
-  Settings,
-  BookOpen,
+  Radio,
+  Bot,
 } from "lucide-react";
-
-import ThreeBackground from "./ThreeBackground";
 import { profile } from "../data";
 
 export default function Hero() {
-  return (
-    <section id="home" className="hero">
+  const base = import.meta.env.BASE_URL;
 
-      {/* =========================
-          3D BACKGROUND
-      ========================== */}
-      <div className="hero-three">
-        <ThreeBackground />
+  return (
+    <section className="hero" id="home">
+      <div className="hero-field-lines">
+        <span />
+        <span />
+        <span />
       </div>
 
-      {/* Background glows */}
-      <div className="hero-glow glow-a" />
-      <div className="hero-glow glow-b" />
-
       <div className="container hero-grid">
-
-        {/* =========================
-            LEFT SIDE
-        ========================== */}
         <motion.div
           className="hero-copy"
-          initial={{
-            opacity: 0,
-            x: -35,
-          }}
-          animate={{
-            opacity: 1,
-            x: 0,
-          }}
-          transition={{
-            duration: 0.8,
-          }}
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
         >
-
-          {/* Availability */}
           <div className="availability">
             <i />
             Available for opportunities
           </div>
 
-          {/* Eyebrow */}
           <p className="eyebrow">
-            HELLO, I'M
+            FIELD / 001 — ENGINEERING PROFILE
           </p>
 
-          {/* Name */}
           <h1>
-            MD. AKHTARUJJAMAN{" "}
-            <em>SIDDIQUEE</em>
+            I BUILD <em>SYSTEMS</em> THAT CONNECT.
           </h1>
 
-          {/* Role */}
-          <h2>
-            {profile.role}
-          </h2>
+          <h2>{profile.role}</h2>
 
-          {/* Description */}
           <p className="hero-description">
-            I build practical systems across IoT, embedded technology,
-            Flutter applications, smart automation and research.
+            I work across IoT, embedded systems, robotics, Flutter
+            applications, smart automation and technology research —
+            turning ideas into practical systems.
           </p>
 
-          {/* =========================
-              ACTION BUTTONS
-          ========================== */}
           <div className="hero-actions">
-
-            {/* Projects */}
-            <a
-              className="btn primary"
-              href="#projects"
-            >
-              View Projects
-              <ArrowDownRight size={16} />
+            <a className="btn primary" href="#projects">
+              Explore Work
+              <ArrowDownRight size={15} />
             </a>
 
-            {/* CV */}
-            <a
-              className="btn secondary"
-              href={`${import.meta.env.BASE_URL}resume.pdf`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FileText size={16} />
-              View CV
+            <a className="btn secondary" href="#contact">
+              Open Channel
+              <ArrowUpRight size={14} />
             </a>
-
           </div>
 
-          {/* =========================
-              SOCIAL LINKS
-          ========================== */}
           <div className="socials">
-
-            {/* GitHub */}
             <a
               href={profile.github}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               aria-label="GitHub"
             >
-              <Github size={18} />
+              <Github size={16} />
             </a>
 
-            {/* LinkedIn */}
             <a
               href={profile.linkedin}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
               aria-label="LinkedIn"
             >
-              <Linkedin size={18} />
+              <Linkedin size={16} />
             </a>
 
-            {/* Email */}
             <a
               href={`mailto:${profile.email}`}
               aria-label="Email"
             >
-              <Mail size={18} />
+              <Mail size={16} />
             </a>
-
           </div>
-
         </motion.div>
 
-
-        {/* =========================
-            RIGHT SIDE
-        ========================== */}
         <motion.div
           className="hero-art"
-          initial={{
-            opacity: 0,
-            scale: 0.82,
-          }}
-          animate={{
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 0.9,
-          }}
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
         >
+          <div className="engineering-id">
+            <div className="id-header">
+              <div>
+                <span className="id-micro">ENGINEERING ID</span>
+                <strong>001</strong>
+              </div>
 
-          {/* =========================
-              ANIMATED ORBITS
-          ========================== */}
-          <div className="orbit orbit-a" />
-          <div className="orbit orbit-b" />
-
-
-          {/* =========================
-              PROFILE CARD
-          ========================== */}
-          <div className="profile-card">
-
-            <div className="profile-image-wrapper">
-
-              <img
-                src={`${import.meta.env.BASE_URL}profile.jpg`}
-                alt="Akhtarujjaman Siddiquee"
-                className="profile-image"
-              />
-
-              <div className="profile-overlay" />
-
+              <div className="id-status">
+                <i />
+                ACTIVE
+              </div>
             </div>
 
+            <div className="id-image">
+              <img
+                src={`${base}profile.png`}
+                alt="Engineering identity graphic"
+              />
+
+              <div className="id-scan-line" />
+
+              <div className="id-image-label">
+                VISUAL / 001
+              </div>
+            </div>
+
+            <div className="id-info">
+              <div className="id-name">
+                <span>FULL NAME</span>
+
+                <strong>
+                  AKHTARUJJAMAN
+                  <br />
+                  SIDDIQUEE
+                </strong>
+              </div>
+
+              <div className="id-role">
+                <span>SPECIALIZATION</span>
+                <strong>IoT / ROBOTICS</strong>
+              </div>
+            </div>
+
+            <div className="id-footer">
+              <span>UFTB</span>
+              <span>BANGLADESH</span>
+              <span>2026</span>
+            </div>
           </div>
 
+          {[
+            ["annotation-one", Cpu, "SYSTEM 01", "RESEARCH, PROBLEM SOLVING"],
+            ["annotation-two", Radio, "SYSTEM 02", "EMBEDDED, AUTOMATION"],
+            ["annotation-three", Bot, "SYSTEM 03", "ROBOTICS, IOT"],
+          ].map(([cls, Icon, small, strong]) => (
+            <motion.div
+              key={cls}
+              className={`hero-annotation ${cls}`}
+              animate={{ y: [0, -4, 0] }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+              }}
+            >
+              <Icon size={13} />
 
-          {/* =========================
-              FLOATING TECHNOLOGY CARDS
-          ========================== */}
+              <div>
+                <small>{small}</small>
+                <strong>{strong}</strong>
+              </div>
+            </motion.div>
+          ))}
 
-          {/* Embedded + IoT */}
-          <motion.div
-            className="float-chip chip-a"
-            initial={{
-              opacity: 0,
-              y: -20,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 0.6,
-              delay: 0.5,
-            }}
-          >
-            <Cpu size={15} />
-            Embedded, IoT
-          </motion.div>
-
-
-          {/* Research */}
-          <motion.div
-            className="float-chip chip-b"
-            initial={{
-              opacity: 0,
-              x: -20,
-            }}
-            animate={{
-              opacity: 1,
-              x: 0,
-            }}
-            transition={{
-              duration: 0.6,
-              delay: 0.7,
-            }}
-          >
-            <BookOpen size={15} />
-            Research, Creative
-          </motion.div>
-
-
-          {/* Automation */}
-          <motion.div
-            className="float-chip chip-c"
-            initial={{
-              opacity: 0,
-              x: 20,
-            }}
-            animate={{
-              opacity: 1,
-              x: 0,
-            }}
-            transition={{
-              duration: 0.6,
-              delay: 0.9,
-            }}
-          >
-            <Settings size={15} />
-            Automation
-          </motion.div>
-
+          <div className="hero-coordinates">
+            <span>23.8103° N</span>
+            <span>90.4125° E</span>
+          </div>
         </motion.div>
-
       </div>
 
+      <div className="hero-bottom-strip">
+        {[
+          ["DISCIPLINE", "IoT / ROBOTICS"],
+          ["FOCUS", "HARDWARE × SOFTWARE"],
+          ["MODE", "BUILD / RESEARCH"],
+          ["STATUS", "● AVAILABLE"],
+        ].map(([a, b]) => (
+          <div key={a}>
+            <span>{a}</span>
 
-      {/* =========================
-          SCROLL INDICATOR
-      ========================== */}
-      <a
-        className="scroll-cue"
-        href="#about"
-      >
-        Scroll to explore ↓
+            <strong
+              className={a === "STATUS" ? "status-active" : ""}
+            >
+              {b}
+            </strong>
+          </div>
+        ))}
+      </div>
+
+      <a className="scroll-cue" href="#about">
+        Scroll to explore
       </a>
-
     </section>
   );
 }

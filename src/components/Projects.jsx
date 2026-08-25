@@ -1,35 +1,183 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, X, Github } from "lucide-react";
-import SectionTitle from "./SectionTitle";
-import { projects } from "../data";
+import { motion } from "framer-motion";
+import {
+  ArrowUpRight,
+  Github,
+  Cpu,
+  Smartphone,
+  Home,
+} from "lucide-react";
+
+const projects = [
+  {
+    number: "01",
+    title: "Portable Assistive Device",
+    category: "ASSISTIVE TECHNOLOGY",
+    description:
+      "A practical assistive technology project built around embedded sensing, portability and real-world interaction.",
+    image: "assistive-device.svg",
+    github:
+      "https://github.com/akhtarujjaman007/Portable-Assistive-Device",
+    tech: ["Embedded", "Sensors", "IoT", "Assistive Tech"],
+    status: "PROTOTYPE",
+    icon: Cpu,
+  },
+  {
+    number: "02",
+    title: "Flutter Weather App",
+    category: "MOBILE APPLICATION",
+    description:
+      "A Flutter weather application focused on API-driven data, responsive interface design and clean mobile interaction.",
+    image: "weather-app.svg",
+    github:
+      "https://github.com/akhtarujjaman007/Flutter-Weather-App",
+    tech: ["Flutter", "Dart", "REST API", "Mobile UI"],
+    status: "DEPLOYED",
+    icon: Smartphone,
+  },
+  {
+    number: "03",
+    title: "Smart Home Automation",
+    category: "IoT / AUTOMATION",
+    description:
+      "A smart-home interface concept for controlling connected devices through a focused mobile experience.",
+    image: "smart-home.svg",
+    github:
+      "https://github.com/akhtarujjaman007/Smart-Home-Automation-UI-Flutter",
+    tech: ["Flutter", "IoT", "Automation", "Smart Home"],
+    status: "ACTIVE",
+    icon: Home,
+  },
+];
 
 export default function Projects() {
-  const [filter, setFilter] = useState("All");
-  const [selected, setSelected] = useState(null);
-  const categories = ["All","IoT","Mobile","Research"];
-  const visible = filter === "All" ? projects : projects.filter(p => p.category === filter);
+  return (
+    <section className="section" id="projects">
+      <div className="container">
+        <div className="section-title">
+          <span>04 / CASE FILES</span>
 
-  return <section id="projects" className="section">
-    <div className="container">
-      <SectionTitle number="03" title="Featured projects" text="Selected work across Flutter, IoT, embedded systems and research."/>
-      <div className="filter-row">{categories.map(c=><button className={filter===c?"active":""} key={c} onClick={()=>setFilter(c)}>{c}</button>)}</div>
-      <div className="project-grid">
-        {visible.map((p,i)=><motion.article layout className="project-card glass" key={p.title} initial={{opacity:0,y:25}} whileInView={{opacity:1,y:0}} transition={{delay:i*.05}} viewport={{once:true}} whileHover={{y:-8}}>
-          <div className="project-art"><span>PROJECT {p.number}</span><div className="project-symbol">{p.number}</div></div>
-          <div className="project-body"><h3>{p.title}</h3><p>{p.description}</p><div className="tags">{p.tags.map(t=><span key={t}>{t}</span>)}</div>
-            <div className="project-actions"><button className="text-btn" onClick={()=>setSelected(p)}>Details <ArrowUpRight size={14}/></button><a className="text-btn" href={p.link} target="_blank" rel="noreferrer"><Github size={14}/> GitHub</a></div>
-          </div>
-        </motion.article>)}
+          <h2>
+            Selected
+            <br />
+            Systems.
+          </h2>
+
+          <p>
+            A selection of projects where ideas became interfaces,
+            prototypes, connected devices and working systems.
+          </p>
+        </div>
+
+        <div className="project-files">
+          {projects.map((p, i) => {
+            const Icon = p.icon;
+
+            return (
+              <motion.article
+                className="project-file"
+                key={p.number}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <div className="project-file-number">
+                  {p.number}
+                </div>
+
+                <div className="project-visual">
+                  <div className="project-visual-header">
+                    <span>VISUAL / {p.number}</span>
+                    <span>{p.status}</span>
+                  </div>
+
+                  <div className="project-image-wrap">
+                    <img
+                      src={`${import.meta.env.BASE_URL}projects/${p.image}`}
+                      alt={p.title}
+                    />
+
+                    <div className="project-image-grid" />
+
+                    <div className="project-image-mark">
+                      <Icon size={18} />
+                    </div>
+                  </div>
+
+                  <div className="project-visual-footer">
+                    <span>SYSTEM PREVIEW</span>
+                    <span>00{i + 1}</span>
+                  </div>
+                </div>
+
+                <div className="project-information">
+                  <div className="project-meta">
+                    <span>CASE / {p.number}</span>
+                    <span>{p.category}</span>
+                  </div>
+
+                  <div className="project-title-row">
+                    <h3>{p.title}</h3>
+
+                    <a
+                      className="project-github"
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open ${p.title} GitHub repository`}
+                    >
+                      <Github size={16} />
+                    </a>
+                  </div>
+
+                  <p className="project-description">
+                    {p.description}
+                  </p>
+
+                  <div className="project-details">
+                    <div className="project-detail">
+                      <span>STATUS</span>
+                      <strong>{p.status}</strong>
+                    </div>
+
+                    <div className="project-detail">
+                      <span>STACK</span>
+
+                      <div className="project-tags">
+                        {p.tech.map((t) => (
+                          <span key={t}>{t}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    className="project-action"
+                    href={p.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>OPEN CASE FILE</span>
+                    <ArrowUpRight size={16} />
+                  </a>
+                </div>
+              </motion.article>
+            );
+          })}
+        </div>
+
+        <div className="projects-footer">
+          <span>MORE SYSTEMS / MORE EXPERIMENTS</span>
+
+          <a
+            href="https://github.com/akhtarujjaman007"
+            target="_blank"
+            rel="noreferrer"
+          >
+            VIEW GITHUB ARCHIVE
+            <ArrowUpRight size={14} />
+          </a>
+        </div>
       </div>
-    </div>
-    <AnimatePresence>{selected && <motion.div className="modal-backdrop" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setSelected(null)}>
-      <motion.div className="modal glass" initial={{y:30,scale:.97}} animate={{y:0,scale:1}} exit={{y:20,scale:.98}} onClick={e=>e.stopPropagation()}>
-        <button className="modal-close" onClick={()=>setSelected(null)}><X/></button>
-        <span className="eyebrow">PROJECT {selected.number}</span><h3>{selected.title}</h3><p>{selected.description}</p>
-        <div className="tags">{selected.tags.map(t=><span key={t}>{t}</span>)}</div>
-        <a className="btn primary" href={selected.link} target="_blank" rel="noreferrer">Open GitHub <Github size={15}/></a>
-      </motion.div>
-    </motion.div>}</AnimatePresence>
-  </section>;
+    </section>
+  );
 }
