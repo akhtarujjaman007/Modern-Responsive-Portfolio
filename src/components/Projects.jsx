@@ -16,7 +16,7 @@ const projects = [
     category: "ASSISTIVE TECHNOLOGY / EMBEDDED SYSTEM",
     description:
       "A practical assistive technology project built around embedded sensing, portability and real-world interaction.",
-    image: "assistive-device.svg",
+    image: "assistive-device.png",
     github:
       "https://github.com/akhtarujjaman007/Portable-Assistive-Device",
     tech: ["Embedded", "Sensors", "IoT", "Assistive Tech"],
@@ -29,7 +29,7 @@ const projects = [
   category: "IoT / DIGITAL TWIN / AGRICULTURE",
   description:
     "A smart rice-field digital twin concept that connects IoT sensing, real-time monitoring, and interactive visualization to support data-driven agricultural management.",
-  image: "rice-twin.svg",
+  image: "rice-twin.png",
   github:
     "https://github.com/akhtarujjaman007/Digital-twin-Rice-field-ricetwin_ai-",
   tech: [
@@ -44,7 +44,7 @@ const projects = [
     category: "MOBILE APPLICATION",
     description:
       "A Flutter weather application focused on API-driven data, responsive interface design and clean mobile interaction.",
-    image: "weather-app.svg",
+    image: "weather-app.png",
     github:
       "https://github.com/akhtarujjaman007/Flutter-Weather-App",
     tech: ["Flutter", "Dart", "REST API", "Mobile UI"],
@@ -57,15 +57,15 @@ const projects = [
   category: "AI / ROBOTICS",
   description:
     "An intelligent rescue robot designed to assist in hazardous fire environments through autonomous navigation, fire detection, and remote monitoring for safer firefighting operations.",
-  image: "firefighting-robot.svg",
+  image: "firefighting-robot.png",
   github:
     "https://github.com/akhtarujjaman007/AI-Assisted-Firefighting-and-Rescue-Robot",
   tech: [
-    "AI",
     "Robotics",
     "IoT",
     "ESP32",
-    "Sensors"
+    "Sensors",
+    "Computer vision"
   ],
   status: "ACTIVE",
   icon: Bot,
