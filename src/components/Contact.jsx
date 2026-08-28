@@ -80,7 +80,7 @@ export default function Contact() {
               <Row
                 icon={<Linkedin size={15} />}
                 label="LINKEDIN"
-                value="PROFESSIONAL PROFILE"
+                value="akhtarujjaman-siddiquee-sujon"
                 href={profile.linkedin}
               />
 

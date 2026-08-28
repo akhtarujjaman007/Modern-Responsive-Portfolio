@@ -1,9 +1,9 @@
 export const profile = {
   name: "Akhtarujjaman Siddiquee",
   role: "IoT & Robotics Engineering Student",
-  email: "akhtarujjaman007@gmail.com",
+  email: "akhtarujjamansiddiquee@gmail.com",
   github: "https://github.com/akhtarujjaman007",
-  linkedin: "https://bd.linkedin.com/in/akhtarujjaman-siddiquee-sujon",
+  linkedin: "https://www.linkedin.com/in/akhtarujjaman-siddiquee-sujon",
   about: "I am an IoT and Robotics Engineering student interested in building practical systems that connect hardware, software and intelligent automation."
 };
 
@@ -38,28 +38,28 @@ export const certifications = [
   {
     issuer: "freeCodeCamp",
     title: "Data Analysis with Python",
-    text: "Issued February 2025 · Credential ID: akhtarujjaman-dawp",
+    text: "Issued February 2025.",
     link: "https://www.freecodecamp.org/certification/akhtarujjaman/data-analysis-with-python-v7"
   },
 
   {
     issuer: "Google",
     title: "Google Data Analytics",
-    text: "Technical learning credential.",
+    text: "Issued: 08 August 2026.",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/FYANA0R62BB2"
   },
 
   {
     issuer: "Google",
     title: "Google AI",
-    text: "Technical learning credential.",
+    text: "Issued: 06 August 2026.",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/C9GD9PUE1LX1"
   },
 
   {
     issuer: "Udemy",
     title: "Python Complete Course: With 30+ Hands-on Tasks and Solution",
-    text: "Issued May 2025 · Credential ID: UC-b1053402-7aa1-4e47-b7eb-4f815f3cd8d7",
+    text: "Issued May 2025.",
     link: "https://www.udemy.com/certificate/UC-b1053402-7aa1-4e47-b7eb-4f815f3cd8d7/"
   }
 

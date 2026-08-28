@@ -67,7 +67,7 @@ export default function Footer() {
             © {new Date().getFullYear()} AKHTARUJJAMAN SIDDIQUEE
           </span>
 
-          <span>DESIGNED / BUILT WITH INTENT</span>
+          <span>Thanks for taking the time to explore my work.</span>
 
           <a href="#top">BACK TO TOP ↑</a>
         </div>

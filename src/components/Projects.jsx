@@ -4,14 +4,16 @@ import {
   Github,
   Cpu,
   Smartphone,
-  Home,
+  Sprout,
+  Bot,
+
 } from "lucide-react";
 
 const projects = [
   {
     number: "01",
     title: "Portable Assistive Device",
-    category: "ASSISTIVE TECHNOLOGY",
+    category: "ASSISTIVE TECHNOLOGY / EMBEDDED SYSTEM",
     description:
       "A practical assistive technology project built around embedded sensing, portability and real-world interaction.",
     image: "assistive-device.svg",
@@ -22,7 +24,22 @@ const projects = [
     icon: Cpu,
   },
   {
-    number: "02",
+  number: "02",
+  title: "RiceTwin",
+  category: "IoT / DIGITAL TWIN / AGRICULTURE",
+  description:
+    "A smart rice-field digital twin concept that connects IoT sensing, real-time monitoring, and interactive visualization to support data-driven agricultural management.",
+  image: "rice-twin.svg",
+  github:
+    "https://github.com/akhtarujjaman007/Digital-twin-Rice-field-ricetwin_ai-",
+  tech: [
+    "IoT", "Digital Twin", "ESP32", "Sensors","Smart Agriculture"
+  ],
+  status: "ACTIVE",
+  icon: Sprout,
+  },
+  {
+    number: "03",
     title: "Flutter Weather App",
     category: "MOBILE APPLICATION",
     description:
@@ -34,19 +51,25 @@ const projects = [
     status: "DEPLOYED",
     icon: Smartphone,
   },
-  {
-    number: "03",
-    title: "Smart Home Automation",
-    category: "IoT / AUTOMATION",
-    description:
-      "A smart-home interface concept for controlling connected devices through a focused mobile experience.",
-    image: "smart-home.svg",
-    github:
-      "https://github.com/akhtarujjaman007/Smart-Home-Automation-UI-Flutter",
-    tech: ["Flutter", "IoT", "Automation", "Smart Home"],
-    status: "ACTIVE",
-    icon: Home,
-  },
+ {
+  number: "04",
+  title: "AI-Assisted Firefighting & Rescue Robot",
+  category: "AI / ROBOTICS",
+  description:
+    "An intelligent rescue robot designed to assist in hazardous fire environments through autonomous navigation, fire detection, and remote monitoring for safer firefighting operations.",
+  image: "firefighting-robot.svg",
+  github:
+    "https://github.com/akhtarujjaman007/AI-Assisted-Firefighting-and-Rescue-Robot",
+  tech: [
+    "AI",
+    "Robotics",
+    "IoT",
+    "ESP32",
+    "Sensors"
+  ],
+  status: "ACTIVE",
+  icon: Bot,
+},
 ];
 
 export default function Projects() {
